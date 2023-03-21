@@ -1,11 +1,15 @@
 :root {
   --bs-accordion-btn-color: #008374;
 }
+html,body{
+  overflow-x:hidden;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat";
   width: 100vw;
+  scroll-behavior: smooth;
 }
 
 .bg-success {

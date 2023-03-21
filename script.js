@@ -4,7 +4,7 @@ let sections = document.querySelectorAll("section");
 let scrollToTop = document.getElementById("scroll-to-top");
 let portfolioNavs = document.querySelectorAll("#portfolio .nav-link");
 let porfolioProducts = document.querySelectorAll("#portfolio .col");
-console.log(porfolioProducts);
+
 
 const getTranslateXY = (element) => {
   const style = window.getComputedStyle(element);

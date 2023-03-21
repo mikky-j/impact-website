@@ -1,10 +1,14 @@
 :root {
   --bs-accordion-btn-color: #008374;
 }
+html,body{
+  overflow-x:hidden;
+}
 body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat";
+  scroll-behavior: smooth;
   width: 100vw;
 }
 
@@ -136,6 +140,7 @@ div.buttons .btn-outline {
 section.hero-body {
   height: 100vh;
 }
+
 
 section.hero-body a i {
   transition: all 0.3s ease-in-out;
@@ -659,5 +664,16 @@ section#footer div.button-row button:hover {
     transform: scale(1.2);
     margin: 0 40px;
     border: 2px solid #00796b;
+  }
+}
+@media (min-width:1000px) {
+  .fs-xl{
+    font-size: 3rem !important;
+  }
+  
+}
+@media (max-width:1024px){
+  .center{
+    text-align: center;
   }
 }
