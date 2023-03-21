@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post | Impact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="blog.css" />
+  </head>
+  <body>
+    <button onclick="toTheTop()" id="scroll-to-top" class="test">
+      <i class="bi bi-arrow-up-short"></i>
+    </button>
+    <section
+      id="main"
+      class="h-auto d-flex position-relative flex-column bg-success"
+    >
+      <div class="banner w-100 py-2 text-white d-flex align-items-center">
+        <div
+          class="contiainer-fluid container-xl d-flex align-items-center justify-content-lg-start justify-content-center"
+        >
+          <div class="me-lg-auto me-0 d-flex">
+            <div class="me-4">
+              <i class="bi bi-envelope"></i> contact@example.com
+            </div>
+            <div><i class="bi bi-phone"></i> +23444445454646</div>
+          </div>
+          <div class="icons">
+            <i class="bi bi-twitter ms-4"></i>
+            <i class="bi bi-facebook ms-4"></i>
+            <i class="bi bi-instagram ms-4"></i>
+            <i class="bi bi-linkedin ms-4"></i>
+          </div>
+        </div>
+      </div>
+      <header
+        class="d-flex bg-success justify-content-center align-items-center"
+        id="header"
+      >
+        <nav class="navbar navbar-expand-lg container-fluid">
+          <div class="container-xl container-fluid">
+            <a class="navbar-brand logo" href="index.html">Impact</a>
+            <button
+              class="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <i class="bi bi-list text-white"></i>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header my-0 py-0 bg-success">
+                <button
+                  type="button"
+                  class="ms-auto btn text-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
+                  <i class="bi bi-x fs-2"></i>
+                </button>
+              </div>
+              <div class="offcanvas-body bg-success">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item ps-3 position-relative">
+                    <a class="nav-link" href="#main-body">Home</a>
+                  </li>
+                  <li class="nav-item ps-3 position-relative">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item ps-3 position-relative">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item ps-3 position-relative">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item ps-3 position-relative">
+                    <a class="nav-link" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item ps-3 position-relative">
+                    <a class="nav-link" href="/blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item ps-3 position-relative dropdown">
+                    <a
+                      class="dropdown-toggle nav-link"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item ps-3 position-relative">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section
+        class="hero pt-5 container-xl w-75 container-fluid d-flex flex-column justify-content-center align-items-center text-center"
+      >
+        <p class="fw-semibold text-center text-white" style="font-size: 3rem">
+          Blog Details
+        </p>
+        <p class="text-center mx-5 text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non harum
+          neque sunt vitae adipisci facilis maiores, enim consequatur, facere
+          sed animi temporibus! Molestias ratione ea, aut reiciendis obcaecati
+          quos rem!
+        </p>
+      </section>
+    </section>
+    <section id="heading" class="bg-secondary-subtle py-4">
+      <p class="fw-semibold my-0 container">
+        <a href="index.html" class="text-success pe-2">Home</a>
+        <span class="pe-2 text-secondary">/</span> Blog Details
+      </p>
+    </section>
+    <section id="posts" class="container my-5">
+      <div class="row my-4">
+        <div class="col-lg-8 col-12">
+          <div class="card">
+            <img src="img/blog/blog-1.jpg" class="img-fluid rounded-3" alt="" />
+            <div class="card-body">
+              <p class="fs-2 fw-bold">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+                ipsum ab.
+              </p>
+              <div class="info text-black-50 d-flex mb-3">
+                <div class="info-section me-3">
+                  <i class="bi bi-person text-success"></i> John Doe
+                </div>
+                <div class="info-section me-3">
+                  <i class="bi bi-clock text-success"></i> Jan 1, 2022.
+                </div>
+                <div class="info-section me-3">
+                  <i class="bi bi-chat-dots text-success"></i> 12 Comments
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                eligendi, dolores perferendis enim eum error vel sint non
+                facilis odit quaerat ducimus fuga veritatis fugit accusantium
+                sed maiores aliquid. Saepe assumenda quas corporis fugit
+                aspernatur illum unde sunt. Tenetur hic accusamus, facilis
+                eligendi rerum doloremque corporis tempora repudiandae sed
+                maxime?
+              </p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                aspernatur optio esse laborum cumque doloremque sapiente,
+                pariatur, maxime iste mollitia assumenda unde. Cum quas facere
+                accusantium eum at laudantium dolorem?
+              </p>
+              <figure class="text-center py-5 bg-secondary-subtle">
+                <blockquote class="blockquote">
+                  <p class="fst-italic fw-medium px-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Provident porro ullam officia, et nostrum eveniet laborum
+                  </p>
+                </blockquote>
+              </figure>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                qui suscipit sapiente quia doloribus, nesciunt accusamus ut,
+                quidem officiis corrupti amet laboriosam magni sit enim
+                necessitatibus nisi expedita inventore cupiditate eveniet. Odit,
+                esse facilis sunt eius ea magnam ex animi eum labore asperiores
+                corrupti aliquid. Incidunt, quos excepturi. Aut, esse.
+              </p>
+              <p class="fs-4 fw-bold">Lorem ipsum dolor sit amet.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                maxime architecto quidem eveniet exercitationem soluta nisi
+                distinctio quae laborum. Corporis facilis sed labore maiores
+                atque ipsa fugit accusantium pariatur rerum nihil aut aliquam
+                possimus ab veritatis veniam cupiditate ad assumenda ex
+                obcaecati, quam facere est officiis. Corrupti deleniti
+                voluptate, pariatur vitae cum, tempore nihil ducimus, voluptatum
+                asperiores officiis possimus quas impedit eaque temporibus
+                neque? Voluptate iusto rem totam expedita cupiditate.
+              </p>
+              <img src="img/blog/blog-2.jpg" class="img-fluid" alt="" />
+              <p class="fs-4 fw-bold">Lorem ipsum dolor sit amet.</p>
+              <p>
+                Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro
+                amet nostrum. In assumenda quia quae a id praesentium. Quos
+                deleniti libero sed occaecati aut porro autem. Consectetur sed
+                excepturi sint non placeat quia repellat incidunt labore. Autem
+                facilis hic dolorum dolores vel. Consectetur quasi id et optio
+                praesentium aut asperiores eaque aut. Explicabo omnis quibusdam
+                esse. Ex libero illum iusto totam et ut aut blanditiis.
+                Veritatis numquam ut illum ut a quam vitae.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                quasi. Est ipsa dicta atque nobis, quo maiores! Autem, vitae
+                similique?
+              </p>
+              <hr />
+              <div class="info d-flex mb-3">
+                <div class="info-section me-4">
+                  <i class="bi bi-folder"></i> Business
+                </div>
+                <div class="info-section me-3">
+                  <i class="bi bi-tags"></i> Creative, Tips, Marketing
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="my-4 card p-3 d-flex flex-row align-items-center">
+            <img
+              src="img/blog/blog-author-4.jpg"
+              class="rounded-circle me-3"
+              width="100px"
+              height="100px"
+              alt=""
+            />
+            <div>
+              <p class="fw-semibold fs-5 m-0">Jane Smith</p>
+              <div class="icon-row mb-2 d-flex text-black-50">
+                <i class="bi bi-facebook me-2"></i>
+                <i class="bi bi-twitter me-2"></i>
+                <i class="bi bi-instagram me-2"></i>
+              </div>
+              <p class="text-black-50">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Corporis, id! Hic, laboriosam. Totam fugiat autem quaerat,
+                aperiam animi voluptatem sit ab accusamus odio officiis quae quo
+                ipsam, inventore cumque. Illo!
+              </p>
+            </div>
+          </div>
+          <div class="comments">
+            <p class="fs-4 fw-bold">8 Comments</p>
+            <div class="comment-list">
+              <div class="comment my-4">
+                <div class="w-100 d-flex">
+                  <img
+                    src="img/blog/blog-author-2.jpg"
+                    height="60px"
+                    width="60px"
+                    alt=""
+                  />
+                  <div class="comment-info ms-3">
+                    <div class="comment-header d-flex">
+                      <div class="comment-author-info me-3">
+                        <p class="fw-bold mb-1">Georgia Reader</p>
+                        <p class="subtitle mb-1">01 Jan, 2022</p>
+                      </div>
+                      <a href="#" class="fs-6 text-success fw-bold">
+                        <i class="bi bi-reply-fill fs-5"></i> Reply
+                      </a>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Tenetur, laudantium ipsum asperiores eligendi praesentium,
+                      voluptatum doloribus animi cupiditate sapiente natus quos
+                      dolores ea adipisci unde a dolore voluptate assumenda id?
+                    </p>
+                  </div>
+                </div>
+                <div class="reply my-3 ps-4"></div>
+              </div>
+              <div class="comment my-4">
+                <div class="w-100 d-flex">
+                  <img
+                    src="img/blog/blog-author-2.jpg"
+                    height="60px"
+                    width="60px"
+                    alt=""
+                  />
+                  <div class="comment-info ms-3">
+                    <div class="comment-header d-flex">
+                      <div class="comment-author-info me-3">
+                        <p class="fw-bold mb-1">Georgia Reader</p>
+                        <p class="subtitle mb-1">01 Jan, 2022</p>
+                      </div>
+                      <a href="#" class="fs-6 text-success fw-bold">
+                        <i class="bi bi-reply-fill fs-5"></i> Reply
+                      </a>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Tenetur, laudantium ipsum asperiores eligendi praesentium,
+                      voluptatum doloribus animi cupiditate sapiente natus quos
+                      dolores ea adipisci unde a dolore voluptate assumenda id?
+                    </p>
+                  </div>
+                </div>
+                <div class="reply my-3 ps-5">
+                  <div class="comment my-4">
+                    <div class="w-100 d-flex">
+                      <img
+                        src="img/blog/blog-author-2.jpg"
+                        height="60px"
+                        width="60px"
+                        alt=""
+                      />
+                      <div class="comment-info ms-3">
+                        <div class="comment-header d-flex">
+                          <div class="comment-author-info me-3">
+                            <p class="fw-bold mb-1">Georgia Reader</p>
+                            <p class="subtitle mb-1">01 Jan, 2022</p>
+                          </div>
+                          <a href="#" class="fs-6 text-success fw-bold">
+                            <i class="bi bi-reply-fill fs-5"></i> Reply
+                          </a>
+                        </div>
+                        <p>
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Tenetur, laudantium ipsum asperiores eligendi
+                          praesentium, voluptatum doloribus animi cupiditate
+                          sapiente natus quos dolores ea adipisci unde a dolore
+                          voluptate assumenda id?
+                        </p>
+                      </div>
+                    </div>
+                    <div class="reply my-3 ps-4">
+                      <div class="comment my-4">
+                        <div class="w-100 d-flex">
+                          <img
+                            src="img/blog/blog-author-2.jpg"
+                            height="60px"
+                            width="60px"
+                            alt=""
+                          />
+                          <div class="comment-info ms-3">
+                            <div class="comment-header d-flex">
+                              <div class="comment-author-info me-3">
+                                <p class="fw-bold mb-1">Georgia Reader</p>
+                                <p class="subtitle mb-1">01 Jan, 2022</p>
+                              </div>
+                              <a href="#" class="fs-6 text-success fw-bold">
+                                <i class="bi bi-reply-fill fs-5"></i> Reply
+                              </a>
+                            </div>
+                            <p>
+                              Lorem ipsum dolor, sit amet consectetur
+                              adipisicing elit. Tenetur, laudantium ipsum
+                              asperiores eligendi praesentium, voluptatum
+                              doloribus animi cupiditate sapiente natus quos
+                              dolores ea adipisci unde a dolore voluptate
+                              assumenda id?
+                            </p>
+                          </div>
+                        </div>
+                        <div class="reply my-3 ps-4"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="comment my-4">
+                <div class="w-100 d-flex">
+                  <img
+                    src="img/blog/blog-author-2.jpg"
+                    height="60px"
+                    width="60px"
+                    alt=""
+                  />
+                  <div class="comment-info ms-3">
+                    <div class="comment-header d-flex">
+                      <div class="comment-author-info me-3">
+                        <p class="fw-bold mb-1">Georgia Reader</p>
+                        <p class="subtitle mb-1">01 Jan, 2022</p>
+                      </div>
+                      <a href="#" class="fs-6 text-success fw-bold">
+                        <i class="bi bi-reply-fill fs-5"></i> Reply
+                      </a>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Tenetur, laudantium ipsum asperiores eligendi praesentium,
+                      voluptatum doloribus animi cupiditate sapiente natus quos
+                      dolores ea adipisci unde a dolore voluptate assumenda id?
+                    </p>
+                  </div>
+                </div>
+                <div class="reply my-3 ps-4"></div>
+              </div>
+              <div class="comment my-4">
+                <div class="w-100 d-flex">
+                  <img
+                    src="img/blog/blog-author-2.jpg"
+                    height="60px"
+                    width="60px"
+                    alt=""
+                  />
+                  <div class="comment-info ms-3">
+                    <div class="comment-header d-flex">
+                      <div class="comment-author-info me-3">
+                        <p class="fw-bold mb-1">Georgia Reader</p>
+                        <p class="subtitle mb-1">01 Jan, 2022</p>
+                      </div>
+                      <a href="#" class="fs-6 text-success fw-bold">
+                        <i class="bi bi-reply-fill fs-5"></i> Reply
+                      </a>
+                    </div>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Tenetur, laudantium ipsum asperiores eligendi praesentium,
+                      voluptatum doloribus animi cupiditate sapiente natus quos
+                      dolores ea adipisci unde a dolore voluptate assumenda id?
+                    </p>
+                  </div>
+                </div>
+                <div class="reply my-3 ps-4"></div>
+              </div>
+            </div>
+          </div>
+          <form action="" class="d-flex reply-form flex-column card p-3">
+            <p class="fs-5 fw-bold">Leave a Reply</p>
+            <p>
+              Your Email Address would not be published. Required Field are
+              marked *
+            </p>
+            <div
+              class="w-100 d-flex justify-content-between align-items-center flex-column flex-lg-row my-2"
+            >
+              <input
+                type="text"
+                class="container me-3 rounded-3"
+                required
+                placeholder="Your Name*"
+              />
+              <input
+                type="email"
+                class="container ms-3 rounded-3"
+                required
+                placeholder="Your Email*"
+              />
+            </div>
+            <input
+              type="text"
+              class="container w-100 my-2 rounded-3"
+              placeholder="Your website"
+            />
+            <textarea
+              name="textarea"
+              id=""
+              cols="30"
+              rows="3"
+              placeholder="Enter Message*"
+              required
+              class="container w-100 my-2 rounded-3"
+            ></textarea>
+            <input
+              type="submit"
+              class="bg-secondary text-white rounded-5 px-3 py-3 my-2 fs-6"
+              value="Post Message"
+            />
+          </form>
+        </div>
+        <div class="col-lg-4 col-12 mt-5 mt-lg-0">
+          <div class="card p-5">
+            <p class="fs-5 fw-bold">Search</p>
+            <div class="search-box d-flex rounded-5 w-100 mb-5">
+              <input
+                type="text"
+                placeholder=""
+                class="w-75 border-0 rounded-5"
+              />
+              <button class="bg-success w-25 rounded-5 border-0">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+            <div class="categories mb-5">
+              <p class="fs-5 fw-bold">Categories</p>
+              <ul class="list-unstyled text-black-50">
+                <li>
+                  <a href="" class="text-black me-2 my-4">General</a> (23)
+                </li>
+                <li>
+                  <a href="" class="text-black me-2 my-4">General</a> (23)
+                </li>
+                <li>
+                  <a href="" class="text-black me-2 my-4">General</a> (23)
+                </li>
+                <li>
+                  <a href="" class="text-black me-2 my-4">General</a> (23)
+                </li>
+                <li>
+                  <a href="" class="text-black me-2 my-4">General</a> (23)
+                </li>
+              </ul>
+            </div>
+            <div class="recent-post">
+              <p class="fs-5 fw-bold">Recent Posts</p>
+              <ul class="list-unstyled">
+                <li class="d-flex my-3">
+                  <img
+                    src="img/blog/blog-author-4.jpg"
+                    width="80px"
+                    height="80px"
+                    alt="img"
+                  />
+                  <div class="info ms-3">
+                    <a href="#" class="fw-bold mb-1 d-block"
+                      >Lorem ipsum dolor sit amet.</a
+                    >
+                    <small class="fst-italic text-black-50">Jan 1, 2022</small>
+                  </div>
+                </li>
+                <li class="d-flex my-3">
+                  <img
+                    src="img/blog/blog-author-4.jpg"
+                    width="80px"
+                    height="80px"
+                    alt="img"
+                  />
+                  <div class="info ms-3">
+                    <a href="#" class="fw-bold mb-1 d-block"
+                      >Lorem ipsum dolor sit amet.</a
+                    >
+                    <small class="fst-italic text-black-50">Jan 1, 2022</small>
+                  </div>
+                </li>
+                <li class="d-flex my-3">
+                  <img
+                    src="img/blog/blog-author-4.jpg"
+                    width="80px"
+                    height="80px"
+                    alt="img"
+                  />
+                  <div class="info ms-3">
+                    <a href="#" class="fw-bold mb-1 d-block"
+                      >Lorem ipsum dolor sit amet.</a
+                    >
+                    <small class="fst-italic text-black-50">Jan 1, 2022</small>
+                  </div>
+                </li>
+                <li class="d-flex my-3">
+                  <img
+                    src="img/blog/blog-author-4.jpg"
+                    width="80px"
+                    height="80px"
+                    alt="img"
+                  />
+                  <div class="info ms-3">
+                    <a href="#" class="fw-bold mb-1 d-block"
+                      >Lorem ipsum dolor sit amet.</a
+                    >
+                    <small class="fst-italic text-black-50">Jan 1, 2022</small>
+                  </div>
+                </li>
+                <li class="d-flex my-3">
+                  <img
+                    src="img/blog/blog-author-4.jpg"
+                    width="80px"
+                    height="80px"
+                    alt="img"
+                  />
+                  <div class="info ms-3">
+                    <a href="#" class="fw-bold mb-1 d-block"
+                      >Lorem ipsum dolor sit amet.</a
+                    >
+                    <small class="fst-italic text-black-50">Jan 1, 2022</small>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tags mt-5">
+              <p class="fs-5 fw-bold">Tags</p>
+              <div class="d-flex flex-wrap">
+                <a href="#" class="btn px-3 py-2 rounded-5 me-2 mt-2">Lorem</a>
+                <a href="#" class="btn px-3 py-2 rounded-5 me-2 mt-2">Lorem</a>
+                <a href="#" class="btn px-3 py-2 rounded-5 me-2 mt-2">Lorem</a>
+                <a href="#" class="btn px-3 py-2 rounded-5 me-2 mt-2">Lorem</a>
+                <a href="#" class="btn px-3 py-2 rounded-5 me-2 mt-2">Lorem</a>
+                <a href="#" class="btn px-3 py-2 rounded-5 me-2 mt-2">Lorem</a>
+                <a href="#" class="btn px-3 py-2 rounded-5 me-2 mt-2">Lorem</a>
+                <a href="#" class="btn px-3 py-2 rounded-5 me-2 mt-2">Lorem</a>
+                <a href="#" class="btn px-3 py-2 rounded-5 me-2 mt-2">Lorem</a>
+                <a href="#" class="btn px-3 py-2 rounded-5 me-2 mt-2">Lorem</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer" class="bg-success text-white py-5">
+      <div class="container">
+        <div class="container row my-3 d-flex flex-sm-column flex-md-row">
+          <div class="left-box container col-md-4 col-12">
+            <p class="fs-2 fw-semibold mb-0">Impact</p>
+            <p class="mb-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              magni deserunt modi nesciunt rerum qui laborum, obcaecati numquam
+              aut eos quis nihil quod ratione, illum iste, tenetur quasi ipsum
+              quidem?
+            </p>
+            <div class="d-flex button-row align-items-center my-3">
+              <button class="text-white bg-transparent rounded-circle">
+                <i class="bi bi-twitter"></i>
+              </button>
+              <button class="text-white bg-transparent rounded-circle">
+                <i class="bi bi-facebook"></i>
+              </button>
+              <button class="text-white bg-transparent rounded-circle">
+                <i class="bi bi-instagram"></i>
+              </button>
+              <button class="text-white bg-transparent rounded-circle">
+                <i class="bi bi-linkedin"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="right-box container col-md-8 col-12 row row-cols-2 row-cols-md-3 justify-content-center"
+          >
+            <div class="col">
+              <p class="fw-bold mb-1 fs-6">Useful Links</p>
+              <ul class="list-unstyled">
+                <li class="fw-medium py-2"><a href="">Home</a></li>
+                <li class="fw-medium py-2"><a href="">About Us</a></li>
+                <li class="fw-medium py-2"><a href="">Services</a></li>
+                <li class="fw-medium py-2">
+                  <a href="">Terms of service</a>
+                </li>
+                <li class="fw-medium py-2"><a href="">Privacy policy</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <p class="fw-bold mb-1 fs-6">Our Services</p>
+              <ul class="list-unstyled">
+                <li class="fw-medium py-2"><a href="">Web Design</a></li>
+                <li class="fw-medium py-2"><a href="">Web Development</a></li>
+                <li class="fw-medium py-2">
+                  <a href="">Product Management</a>
+                </li>
+                <li class="fw-medium py-2">
+                  <a href="">Marketing</a>
+                </li>
+                <li class="fw-medium py-2"><a href="">Graphic Design</a></li>
+              </ul>
+            </div>
+            <div class="col text-lg-start text-center my-2 my-lg-0 fw-medium">
+              <p class="fw-bold mb-1 fs-6">Contact Us</p>
+              <p class="my-3">
+                <span class="my-2 d-block">A108 Adam Street</span>
+                <span class="my-2 d-block">New York, NY 535022</span>
+                <span class="my-2 d-block">United States</span>
+              </p>
+              <p class="my-4">
+                <span class="my-2 d-block"
+                  ><span class="fw-bold">Phone:</span>+234 444 555 6666</span
+                >
+                <span class="my-2 d-block"
+                  ><span class="fw-bold">Email: </span>info@example.com</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container d-flex justify-content-center align-items-center flex-column"
+        >
+          <p>
+            &copy; Copyright <span class="fw-bold">Impact.</span> All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+  <script src="script.js"></script>
+</html>

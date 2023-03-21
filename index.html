@@ -1,0 +1,1939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <title>Impact</title>
+  </head>
+  <body class="position-relative">
+    <button onclick="toTheTop()" id="scroll-to-top" class="test">
+      <i class="bi bi-arrow-up-short"></i>
+    </button>
+    <section
+      id="main-body"
+      class="h-auto d-flex position-relative flex-column bg-success"
+    >
+      <div class="banner w-100 py-2 text-white d-flex align-items-center">
+        <div
+          class="contiainer-fluid container-xl d-flex justify-content-center justify-content-lg-between align-items-center"
+        >
+          <div class="d-flex">
+            <div class="me-4">
+              <i class="bi bi-envelope"></i> contact@example.com
+            </div>
+            <div><i class="bi bi-phone"></i> +23444445454646</div>
+          </div>
+          <div class="icons">
+            <i class="bi bi-twitter ms-4"></i>
+            <i class="bi bi-facebook ms-4"></i>
+            <i class="bi bi-instagram ms-4"></i>
+            <i class="bi bi-linkedin ms-4"></i>
+          </div>
+        </div>
+      </div>
+      <header
+        class="d-flex bg-success justify-content-center align-items-center"
+        id="header"
+      >
+        <nav class="navbar navbar-expand-lg container-fluid">
+          <div class="container-xl container-fluid">
+            <a class="navbar-brand logo" href="#">Impact</a>
+            <button
+              class="navbar-toggler border-0"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <!-- <span class="navbar-toggler-icon"></span> -->
+              <i class="bi bi-list text-white"></i>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header my-0 py-0 bg-success">
+                <button
+                  type="button"
+                  class="ms-auto btn text-white"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
+                  <i class="bi bi-x fs-2"></i>
+                </button>
+              </div>
+              <div class="offcanvas-body bg-success">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item ps-3 position-relative">
+                    <a class="nav-link active" href="#main-body">Home</a>
+                  </li>
+                  <li class="nav-item ps-3 position-relative">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item ps-3 position-relative">
+                    <a class="nav-link" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item ps-3 position-relative">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item ps-3 position-relative">
+                    <a class="nav-link" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item ps-3 position-relative">
+                    <a class="nav-link" href="/blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item ps-3 position-relative dropdown">
+                    <a
+                      class="dropdown-toggle nav-link"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item ps-3 position-relative">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section
+        class="hero-body pb-5 text-white"
+        data-aos="fade-in"
+        data-aos-duration="1000"
+      >
+        <div
+          class="container-xl h-100 container-fluid d-flex flex-column-reverse flex-lg-row justify-content-center align-items-center"
+        >
+          <div
+            class="left-hero flex-grow-0 mt-sm-4 mt-0 d-flex flex-column justify-content-center align-items-sm-center align-items-lg-start"
+          >
+            <div class="title fs-1 fw-bold">Welcome to impact</div>
+            <div class="text w-75 mt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium blanditiis.
+            </div>
+            <div class="buttons d-flex align-items-center mt-4 fs-4">
+              <a href="#" class="btn btn-outline me-5">Get Started</a>
+              <a href="#" class="btn text-white d-flex align-items-center"
+                ><i class="bi bi-play-circle fs-2 text-white-50 me-2"></i> Watch
+                Video</a
+              >
+            </div>
+          </div>
+          <div
+            class="right-hero flex-grow-1 d-flex justify-content-center align-items-center"
+          >
+            <img src="hero-img.svg" alt="Hero Image" />
+          </div>
+        </div>
+      </section>
+      <section
+        class="main-body-footer d-flex justify-content-center w-100 text-white mb-4"
+      >
+        <div
+          class="d-flex flex-sm-column flex-md-row justify-content-between container-xl container-fluid h-100 w-100"
+        >
+          <div
+            class="h-100 rounded-3 mt-sm-4 mt-lg-0 container bg-success-subtle d-flex flex-column justify-content-center align-items-center bg-success p-5 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <i class="bi bi-easel d-block"></i>
+            <div class="text">Lorem, ipsum.</div>
+          </div>
+          <div
+            class="h-100 rounded-3 mt-sm-4 mt-lg-0 container bg-success-subtle d-flex flex-column justify-content-center align-items-center bg-success p-5 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="50"
+          >
+            <i class="bi bi-gem"></i>
+            <div class="text">Lorem, ipsum.</div>
+          </div>
+          <div
+            class="h-100 rounded-3 mt-sm-4 mt-lg-0 container bg-success-subtle d-flex flex-column justify-content-center align-items-center bg-success p-5 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="100"
+          >
+            <i class="bi bi-geo-alt"></i>
+            <div class="text">Lorem, ipsum.</div>
+          </div>
+          <div
+            class="h-100 rounded-3 mt-sm-4 mt-lg-0 container bg-success-subtle d-flex flex-column justify-content-center align-items-center bg-success p-5 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="150"
+          >
+            <i class="bi bi-command"></i>
+            <div class="text">Lorem, ipsum.</div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section
+      id="about"
+      class="d-flex justify-content-center pt-5 container align-items-center flex-column mb-5"
+    >
+      <div
+        class="d-flex flex-column justify-content-between align-items-center w-100"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <p class="fs-2 fw-semibold heading">About Us</p>
+        <div class="underline bg-success"></div>
+      </div>
+      <p class="text-center mt-4" data-aos="fade-up" data-aos-duration="1000">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+        officiis quibusdam inventore numquam enim voluptatum commodi
+      </p>
+      <div
+        class="info d-flex justify-content-center align-items-center flex-sm-column flex-lg-row w-100 mt-4"
+      >
+        <div
+          class="left-box container flex-grow-1 me-lg-4 me-sm-0 mb-sm-4 ms-lg-0"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="fs-3 fw-bold">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          </div>
+          <img src="about.jpg" class="img-fluid rounded-4 my-4" alt="" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            natus illum consectetur pariatur quia eaque iusto doloremque rerum?
+            Assumenda accusantium fugiat quibusdam quis reprehenderit eaque
+            voluptas molestiae tenetur nam animi.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+            natus illum consectetur pariatur quia eaque iusto doloremque rerum?
+            Assumenda accusantium fugiat quibusdam quis reprehenderit eaque
+            voluptas molestiae tenetur nam animi.
+          </p>
+        </div>
+        <div
+          class="right-box container flex-grow-1 ms-sm-0 ms-lg-4"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="text" data-aos="fade-up" data-aos-duration="1000">
+            <p class="fst-italic">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              cumque officiis suscipit eveniet! Qui nostrum delectus beatae
+            </p>
+            <ul class="list-unstyled">
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                <div>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Modi, enim.
+                </div>
+              </li>
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                <div>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Modi, enim.
+                </div>
+              </li>
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                <div>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Modi, enim.
+                </div>
+              </li>
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                <div>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Modi, enim.
+                </div>
+              </li>
+            </ul>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum
+              nesciunt amet quisquam consequatur dolore alias vel deleniti qui
+              dolores non provident aut iste, perspiciatis facere laudantium
+              iure nemo? Incidunt, in.
+            </p>
+          </div>
+          <img src="about-2.jpg" class="img-fluid rounded-4" alt="" />
+        </div>
+      </div>
+    </section>
+    <section
+      class="swiper myswiper container my-5 py-5"
+      id="brands"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="clients/client-1.png" class="img-fluid" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="clients/client-2.png" class="img-fluid" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="clients/client-3.png" class="img-fluid" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="clients/client-4.png" class="img-fluid" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="clients/client-5.png" class="img-fluid" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="clients/client-6.png" class="img-fluid" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="clients/client-7.png" class="img-fluid" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="clients/client-8.png" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </section>
+    <section
+      id="stat"
+      class="container my-5 py-5 d-flex align-items-center flex-sm-column flex-lg-row"
+    >
+      <div
+        class="left-box container mb-0 mb-sm-5"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <img src="img/stats-img.svg" alt="" class="img-fluid" />
+      </div>
+      <div
+        class="right-box container d-flex flex-column justify-content-center align-items-center"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="container d-flex align-items-center">
+          <div class="number fs-1 fw-bold text-success me-3">232</div>
+          <p class="text flex-grow-1">
+            <span class="fw-bold">Happy Clients</span> Lorem ipsum dolor sit
+            amet
+          </p>
+        </div>
+        <hr />
+        <div class="container d-flex align-items-center">
+          <div class="number fs-1 fw-bold text-success me-3">521</div>
+          <p class="text flex-grow-1">
+            <span class="fw-bold">Projects</span> Lorem ipsum dolor sit amet
+          </p>
+        </div>
+        <hr />
+        <div class="container d-flex align-items-center">
+          <div class="number fs-1 fw-bold text-success me-3">453</div>
+          <p class="text flex-grow-1">
+            <span class="fw-bold">Hours of support</span> Lorem ipsum dolor sit
+            amet
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      id="call"
+      class="container rounded-4 my-5"
+      data-aos="zoom-in-down"
+      data-aos-duration="2000"
+    >
+      <div
+        class="background d-flex h-100 w-100 rounded-4 p-5 text-white justify-content-center align-items-center flex-column"
+      >
+        <button class="play mb-5">
+          <i class="bi bi-play"></i>
+        </button>
+        <h2 class="mb-3 fw-bold">Call to Action</h2>
+        <p class="mb-5 text-center">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit itaque,
+          dicta autem voluptatem illum nobis sint aut commodi nemo eaque!
+        </p>
+        <button class="btn-outline-success rounded-5 px-4 py-3 text-white">
+          Call To Action
+        </button>
+      </div>
+    </section>
+    <section id="services" class="bg-body-tertiary py-5">
+      <div class="container">
+        <div
+          class="d-flex flex-column justify-content-between pt-5 align-items-center w-100"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <p class="fs-2 fw-semibold heading">Our Services</p>
+          <div class="underline bg-success"></div>
+        </div>
+        <p class="text-center my-5" data-aos="fade-up" data-aos-duration="1000">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
+          vero, sit itaque odit ipsum quidem nam, ea maxime ad quae vitae
+          blanditiis voluptatibus architecto cumque laboriosam aliquid ratione
+          aut fugit.
+        </p>
+        <div
+          class="row row-cols-1 row-cols-md-3 g-4"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="1000"
+        >
+          <div class="col">
+            <a class="link-card" href="#">
+              <div class="card">
+                <div class="card-header bg-white border-0">
+                  <i class="bi bi-activity"></i>
+                  <div>
+                    <span class="fs-4 fw-bold">lorem, ipsum.</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    this is a longer card with supporting text below as a
+                    natural lead-in to additional content. this content is a
+                    little bit longer.
+                  </p>
+                  <p class="card-link text-success">
+                    read more <i class="bi bi-arrow-right"></i>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link-card" href="#">
+              <div class="card">
+                <div class="card-header bg-white border-0">
+                  <i class="bi bi-broadcast"></i>
+                  <div>
+                    <span class="fs-4 fw-bold">Lorem, ipsum.</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                  <p class="card-link text-success">
+                    Read More <i class="bi bi-arrow-right"></i>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link-card" href="#">
+              <div class="card">
+                <div class="card-header bg-white border-0">
+                  <i class="bi bi-easel"></i>
+                  <div>
+                    <span class="fs-4 fw-bold">Lorem, ipsum.</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                  <p class="card-link text-success">
+                    Read More <i class="bi bi-arrow-right"></i>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link-card" href="#">
+              <div class="card">
+                <div class="card-header bg-white border-0">
+                  <i class="bi bi-bounding-box-circles"></i>
+                  <div>
+                    <span class="fs-4 fw-bold">Lorem, ipsum.</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                  <p class="card-link text-success">
+                    Read More <i class="bi bi-arrow-right"></i>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link-card" href="#">
+              <div class="card">
+                <div class="card-header bg-white border-0">
+                  <i class="bi bi-calendar2-week"></i>
+                  <div>
+                    <span class="fs-4 fw-bold">Lorem, ipsum.</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                  <p class="card-link text-success">
+                    Read More <i class="bi bi-arrow-right"></i>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col">
+            <a class="link-card" href="#">
+              <div class="card">
+                <div class="card-header bg-white border-0">
+                  <i class="bi bi-chat-square-dots"></i>
+                  <div>
+                    <span class="fs-4 fw-bold">Lorem, ipsum.</span>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">
+                    This is a longer card with supporting text below as a
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
+                  </p>
+                  <p class="card-link text-success">
+                    Read More <i class="bi bi-arrow-right"></i>
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="pt-5">
+      <div class="container">
+        <div
+          class="d-flex flex-column justify-content-between pt-5 align-items-center w-100"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="1000"
+        >
+          <p class="fs-2 fw-semibold heading">Testimonials</p>
+          <div class="underline bg-success"></div>
+        </div>
+        <p
+          class="text-center mt-3 mb-5"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="1000"
+        >
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
+          vero, sit itaque odit ipsum quidem nam, ea maxime ad quae vitae
+          blanditiis voluptatibus architecto cumque laboriosam aliquid ratione
+          aut fugit.
+        </p>
+        <div
+          class="contianer testimonial-swiper"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="1000"
+        >
+          <div class="swiper-wrapper owl-carousel owl-theme">
+            <div class="card testimonial-card">
+              <div class="card-header bg-white border-0 d-flex">
+                <img
+                  src="img/testimonials/testimonials-1.jpg"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <div class="card-info ms-3">
+                  <p class="testimonial-title">Lorem, ipsum.</p>
+                  <p class="testimonial-subtitle">Lorem</p>
+                  <div class="d-flex text-warning">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text fst-italic">
+                  <i class="bi bi-quote text-success fs-3"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus asperiores atque cumque iure quidem unde officiis
+                  magnam amet incidunt modi quaerat obcaecati animi delectus
+                  minus, quam dignissimos autem, blanditiis aliquid
+                  <!-- <sub>s</sub>. -->
+                  <i class="bi bi-quote text-success fs-3 upside-down"></i>
+                </p>
+              </div>
+            </div>
+            <div class="card testimonial-card">
+              <div class="card-header bg-white border-0 d-flex">
+                <img
+                  src="img/testimonials/testimonials-1.jpg"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <div class="card-info ms-3">
+                  <p class="testimonial-title">Lorem, ipsum.</p>
+                  <p class="testimonial-subtitle">Lorem</p>
+                  <div class="d-flex text-warning">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text fst-italic">
+                  <i class="bi bi-quote text-success fs-3"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus asperiores atque cumque iure quidem unde officiis
+                  magnam amet incidunt modi quaerat obcaecati animi delectus
+                  minus, quam dignissimos autem, blanditiis aliquid.
+                  <i class="bi bi-quote text-success fs-3 upside-down"></i>
+                </p>
+              </div>
+            </div>
+            <div class="card testimonial-card">
+              <div class="card-header bg-white border-0 d-flex">
+                <img
+                  src="img/testimonials/testimonials-1.jpg"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <div class="card-info ms-3">
+                  <p class="testimonial-title">Lorem, ipsum.</p>
+                  <p class="testimonial-subtitle">Lorem</p>
+                  <div class="d-flex text-warning">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text fst-italic">
+                  <i class="bi bi-quote text-success fs-3"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus asperiores atque cumque iure quidem unde officiis
+                  magnam amet incidunt modi quaerat obcaecati animi delectus
+                  minus, quam dignissimos autem, blanditiis aliquid.
+                  <i class="bi bi-quote text-success fs-3 upside-down"></i>
+                </p>
+              </div>
+            </div>
+            <div class="card testimonial-card">
+              <div class="card-header bg-white border-0 d-flex">
+                <img
+                  src="img/testimonials/testimonials-1.jpg"
+                  class="testimonial-img"
+                  alt=""
+                />
+                <div class="card-info ms-3">
+                  <p class="testimonial-title">Lorem, ipsum.</p>
+                  <p class="testimonial-subtitle">Lorem</p>
+                  <div class="d-flex text-warning">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text fst-italic">
+                  <i class="bi bi-quote text-success fs-3"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Repellendus asperiores atque cumque iure quidem unde officiis
+                  magnam amet incidunt modi quaerat obcaecati animi delectus
+                  minus, quam dignissimos autem, blanditiis aliquid.
+                  <i class="bi bi-quote text-success fs-3 upside-down"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="portfolio"
+      class="bg-body-tertiary py-5"
+      data-aos="fade-up"
+      data-aos-offset="300"
+      data-aos-duration="1000"
+    >
+      <div class="container">
+        <div
+          class="d-flex flex-column justify-content-between pt-5 align-items-center w-100"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="1000"
+        >
+          <p class="fs-2 fw-semibold heading">Portfolio</p>
+          <div class="underline bg-success"></div>
+        </div>
+        <p class="text-center mt-3 mb-5">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
+          vero, sit itaque odit ipsum quidem nam, ea maxime ad quae vitae
+          blanditiis voluptatibus architecto cumque laboriosam aliquid ratione
+          aut fugit.
+        </p>
+        <ul
+          class="nav mb-4 justify-content-center"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="1000"
+        >
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page">All</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">App</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Branding</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link">Books</a>
+          </li>
+        </ul>
+        <div
+          class="row row-cols-1 row-cols-md-3 g-4 position-relative"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="1000"
+        >
+          <div class="col" aria-tag="app">
+            <div class="card rounded-4">
+              <div class="card-img-top rounded-top-4">
+                <img
+                  src="img/portfolio/app-1.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-title fw-semibold fs-5">Lorem, ipsum.</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, eius.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col" aria-tag="product">
+            <div class="card rounded-4">
+              <div class="card-img-top rounded-top-4">
+                <img
+                  src="img/portfolio/product-1.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-title fw-semibold fs-5">Lorem, ipsum.</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, eius.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col" aria-tag="branding">
+            <div class="card rounded-4">
+              <div class="card-img-top rounded-top-4">
+                <img
+                  src="img/portfolio/branding-1.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-title fw-semibold fs-5">Lorem, ipsum.</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, eius.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col" aria-tag="books">
+            <div class="card rounded-4">
+              <div class="card-img-top rounded-top-4">
+                <img
+                  src="img/portfolio/books-1.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-title fw-semibold fs-5">Lorem, ipsum.</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, eius.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col" aria-tag="app">
+            <div class="card rounded-4">
+              <div class="card-img-top rounded-top-4">
+                <img
+                  src="img/portfolio/app-2.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-title fw-semibold fs-5">Lorem, ipsum.</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, eius.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col" aria-tag="product">
+            <div class="card rounded-4">
+              <div class="card-img-top rounded-top-4">
+                <img
+                  src="img/portfolio/product-2.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-title fw-semibold fs-5">Lorem, ipsum.</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, eius.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col" aria-tag="branding">
+            <div class="card rounded-4">
+              <div class="card-img-top rounded-top-4">
+                <img
+                  src="img/portfolio/branding-2.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-title fw-semibold fs-5">Lorem, ipsum.</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, eius.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col" aria-tag="books">
+            <div class="card rounded-4">
+              <div class="card-img-top rounded-top-4">
+                <img
+                  src="img/portfolio/books-2.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-title fw-semibold fs-5">Lorem, ipsum.</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, eius.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col" aria-tag="app">
+            <div class="card rounded-4">
+              <div class="card-img-top rounded-top-4">
+                <img
+                  src="img/portfolio/app-3.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-title fw-semibold fs-5">Lorem, ipsum.</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, eius.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col" aria-tag="product">
+            <div class="card rounded-4">
+              <div class="card-img-top rounded-top-4">
+                <img
+                  src="img/portfolio/product-3.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-title fw-semibold fs-5">Lorem, ipsum.</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, eius.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col" aria-tag="branding">
+            <div class="card rounded-4">
+              <div class="card-img-top rounded-top-4">
+                <img
+                  src="img/portfolio/branding-3.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-title fw-semibold fs-5">Lorem, ipsum.</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, eius.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col" aria-tag="books">
+            <div class="card rounded-4">
+              <div class="card-img-top rounded-top-4">
+                <img
+                  src="img/portfolio/books-3.jpg"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+              <div class="card-body">
+                <p class="card-title fw-semibold fs-5">Lorem, ipsum.</p>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, eius.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team" class="container pb-5">
+      <div
+        class="d-flex flex-column justify-content-between pt-5 align-items-center w-100"
+        data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-duration="1000"
+      >
+        <p class="fs-2 fw-semibold heading">Our Team</p>
+        <div class="underline bg-success"></div>
+      </div>
+      <p
+        class="text-center mt-3 mb-5"
+        data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-duration="1000"
+      >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit vero,
+        sit itaque odit ipsum quidem nam, ea maxime ad quae vitae blanditiis
+        voluptatibus architecto cumque laboriosam aliquid ratione aut fugit.
+      </p>
+      <div
+        class="row row-cols-1 row-cols-md-4 g-4"
+        data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-duration="1000"
+      >
+        <div class="col">
+          <div class="card">
+            <div
+              class="card-img-top pt-3 px-3 mb-0 pb-0 bg-white w-100 border-0"
+            >
+              <img
+                src="img/team/team-1.jpg"
+                alt=""
+                class="img-fluid rounded-3"
+              />
+            </div>
+            <div class="card-body pt-2">
+              <p class="card-title my-0 fs-4 fw-bold text-center">
+                Lorem, ipsum.
+              </p>
+              <p
+                class="card-subtitle opacity-75 mb-2 text-center fst-italic text-black50"
+              >
+                Lorem ipsum dolor sit.
+              </p>
+              <div
+                class="w-100 d-flex justify-content-evenly align-items-center my-3"
+              >
+                <button class="team-button btn btn-outline-secondary">
+                  <i class="bi bi-twitter"></i>
+                </button>
+                <button class="team-button btn btn-outline-secondary">
+                  <i class="bi bi-facebook"></i>
+                </button>
+                <button class="team-button btn btn-outline-secondary">
+                  <i class="bi bi-instagram"></i>
+                </button>
+                <button class="team-button btn btn-outline-secondary">
+                  <i class="bi bi-linkedin"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div
+              class="card-img-top pt-3 px-3 mb-0 pb-0 bg-white w-100 border-0"
+            >
+              <img
+                src="img/team/team-2.jpg"
+                alt=""
+                class="img-fluid rounded-3"
+              />
+            </div>
+            <div class="card-body pt-2">
+              <p class="card-title my-0 fs-4 fw-bold text-center">
+                Lorem, ipsum.
+              </p>
+              <p
+                class="card-subtitle opacity-75 mb-2 text-center fst-italic text-black50"
+              >
+                Lorem ipsum dolor sit.
+              </p>
+              <div
+                class="w-100 d-flex justify-content-evenly align-items-center my-3"
+              >
+                <button class="team-button btn btn-outline-secondary">
+                  <i class="bi bi-twitter"></i>
+                </button>
+                <button class="team-button btn btn-outline-secondary">
+                  <i class="bi bi-facebook"></i>
+                </button>
+                <button class="team-button btn btn-outline-secondary">
+                  <i class="bi bi-instagram"></i>
+                </button>
+                <button class="team-button btn btn-outline-secondary">
+                  <i class="bi bi-linkedin"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div
+              class="card-img-top pt-3 px-3 mb-0 pb-0 bg-white w-100 border-0"
+            >
+              <img
+                src="img/team/team-3.jpg"
+                alt=""
+                class="img-fluid rounded-3"
+              />
+            </div>
+            <div class="card-body pt-2">
+              <p class="card-title my-0 fs-4 fw-bold text-center">
+                Lorem, ipsum.
+              </p>
+              <p
+                class="card-subtitle opacity-75 mb-2 text-center fst-italic text-black50"
+              >
+                Lorem ipsum dolor sit.
+              </p>
+              <div
+                class="w-100 d-flex justify-content-evenly align-items-center my-3"
+              >
+                <button class="team-button btn btn-outline-secondary">
+                  <i class="bi bi-twitter"></i>
+                </button>
+                <button class="team-button btn btn-outline-secondary">
+                  <i class="bi bi-facebook"></i>
+                </button>
+                <button class="team-button btn btn-outline-secondary">
+                  <i class="bi bi-instagram"></i>
+                </button>
+                <button class="team-button btn btn-outline-secondary">
+                  <i class="bi bi-linkedin"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div
+              class="card-img-top pt-3 px-3 mb-0 pb-0 bg-white w-100 border-0"
+            >
+              <img
+                src="img/team/team-4.jpg"
+                alt=""
+                class="img-fluid rounded-3"
+              />
+            </div>
+            <div class="card-body pt-2">
+              <p class="card-title my-0 fs-4 fw-bold text-center">
+                Lorem, ipsum.
+              </p>
+              <p
+                class="card-subtitle opacity-75 mb-2 text-center fst-italic text-black50"
+              >
+                Lorem ipsum dolor sit.
+              </p>
+              <div
+                class="w-100 d-flex justify-content-evenly align-items-center my-3"
+              >
+                <button class="team-button btn btn-outline-secondary">
+                  <i class="bi bi-twitter"></i>
+                </button>
+                <button class="team-button btn btn-outline-secondary">
+                  <i class="bi bi-facebook"></i>
+                </button>
+                <button class="team-button btn btn-outline-secondary">
+                  <i class="bi bi-instagram"></i>
+                </button>
+                <button class="team-button btn btn-outline-secondary">
+                  <i class="bi bi-linkedin"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="pricing" class="bg-body-tertiary my-5 pb-5">
+      <div class="container">
+        <div
+          class="d-flex flex-column justify-content-between pt-5 align-items-center w-100"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="1000"
+        >
+          <p class="fs-2 fw-semibold heading">Pricing</p>
+          <div class="underline bg-success"></div>
+        </div>
+        <p
+          class="text-center mt-3 mb-5"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="1000"
+        >
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
+          vero, sit itaque odit ipsum quidem nam, ea maxime ad quae vitae
+          blanditiis voluptatibus architecto cumque laboriosam aliquid ratione
+          aut fugit.
+        </p>
+        <div
+          class="pricing-list d-flex flex-md-row flex-column justify-content-center"
+          data-aos="zoom-in-down"
+          data-aos-offset="300"
+          data-aos-duration="1000"
+        >
+          <div class="d-flex bg-white align-items-center flex-column py-5 px-3">
+            <div class="title my-3 fw-semibold">Free Plan</div>
+            <div
+              class="icon d-flex mb-5 mt-3 text-white fs-2 justify-content-center align-items-center bg-success"
+            >
+              <i class="bi bi-box"></i>
+            </div>
+            <p class="price text-black-50 fs-6">
+              <span class="fw-bold fs-1"><sup>$</sup>0</span> / month
+            </p>
+            <ul class="list-unstyled fs-6">
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-check text-success"></i>
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-check text-success"></i>
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-check text-success"></i>
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-x text-danger"></i>
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-x text-danger"></i>
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+              </li>
+            </ul>
+            <button
+              class="btn btn-outline-success py-3 text-success fw-bold w-50"
+            >
+              Buy now
+            </button>
+          </div>
+          <div
+            class="d-flex active my-sm-5 my-0 bg-white align-items-center flex-column py-5 px-3"
+          >
+            <div class="title my-3 fw-semibold">Free Plan</div>
+            <div
+              class="icon d-flex mb-5 mt-3 text-white fs-2 justify-content-center align-items-center bg-success"
+            >
+              <i class="bi bi-box"></i>
+            </div>
+            <p class="price text-black-50 fs-6">
+              <span class="fw-bold fs-1"><sup>$</sup>0</span> / month
+            </p>
+            <ul class="list-unstyled fs-6">
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-check text-success"></i>
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-check text-success"></i>
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-check text-success"></i>
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-x text-danger"></i>
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-x text-danger"></i>
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+              </li>
+            </ul>
+            <button
+              class="btn btn-outline-success py-3 text-success fw-bold w-50"
+            >
+              Buy now
+            </button>
+          </div>
+          <div class="d-flex bg-white align-items-center flex-column py-5 px-3">
+            <div class="title my-3 fw-semibold">Free Plan</div>
+            <div
+              class="icon d-flex mb-5 mt-3 text-white fs-2 justify-content-center align-items-center bg-success"
+            >
+              <i class="bi bi-box"></i>
+            </div>
+            <p class="price text-black-50 fs-6">
+              <span class="fw-bold fs-1"><sup>$</sup>0</span> / month
+            </p>
+            <ul class="list-unstyled fs-6">
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-check text-success"></i>
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-check text-success"></i>
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-check text-success"></i>
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-x text-danger"></i>
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+              </li>
+              <li class="d-flex justify-content-between">
+                <i class="bi bi-x text-danger"></i>
+                <span>Lorem ipsum dolor sit amet consectetur.</span>
+              </li>
+            </ul>
+            <button
+              class="btn btn-outline-success py-3 text-success fw-bold w-50"
+            >
+              Buy now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      id="faq"
+      class="container mb-5 pb-5 d-flex flex-md-row flex-column justify-content-center"
+    >
+      <div class="me-4 left-box" data-aos="fade-in" data-aos-duration="1000">
+        <p class="title fs-2">
+          Frequently Asked <br />
+          <span class="fw-bold">Questions</span>
+        </p>
+        <p class="text-black-50">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur odio
+          eius repellat illum dolorem, ab praesentium libero labore officiis
+          minus, nemo recusandae, modi animi. Fuga natus deleniti fugiat
+          laudantium et.
+        </p>
+      </div>
+      <div
+        class="right-box ms-lg-5 ms-0"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="accordion w-100 border-none" id="accordionExample">
+          <div
+            class="accordion-item border-none"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-duration="1000"
+          >
+            <h2 class="accordion-header boder-none" id="headingOne">
+              <button
+                class="accordion-button fw-semibold fs-5 py-4 text-black collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseOne"
+              >
+                <span class="text-success me-4">1.</span> Lorem ipsum dolor sit
+                amet consectetur.
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse hide"
+              aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that
+                just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion border-none" id="accordionExample">
+          <div
+            class="accordion-item border-none"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-duration="1000"
+          >
+            <h2 class="accordion-header boder-none" id="headingTwo">
+              <button
+                class="accordion-button fw-semibold fs-5 py-4 text-black collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                <span class="text-success me-4">2.</span> Lorem ipsum dolor sit
+                amet consectetur.
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that
+                just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion border-none" id="accordionExample">
+          <div
+            class="accordion-item border-none"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-duration="1000"
+          >
+            <h2 class="accordion-header boder-none" id="headingThree">
+              <button
+                class="accordion-button fw-semibold fs-5 py-4 text-black collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                <span class="text-success me-4">3.</span> Lorem ipsum dolor sit
+                amet consectetur.
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse hide"
+              aria-labelledby="headingThree"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that
+                just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion border-none" id="accordionExample">
+          <div
+            class="accordion-item border-none"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-duration="1000"
+          >
+            <h2 class="accordion-header boder-none" id="headingFour">
+              <button
+                class="accordion-button fw-semibold fs-5 py-4 text-black collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                <span class="text-success me-4">4.</span> Lorem ipsum dolor sit
+                amet consectetur.
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse hide"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that
+                just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion border-none" id="accordionExample">
+          <div
+            class="accordion-item border-none"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-duration="1000"
+          >
+            <h2 class="accordion-header boder-none" id="headingFive">
+              <button
+                class="accordion-button fw-semibold fs-5 py-4 text-black collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                <span class="text-success me-4">5.</span> Lorem ipsum dolor sit
+                amet consectetur.
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse hide"
+              aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is
+                shown by default, until the collapse plugin adds the appropriate
+                classes that we use to style each element. These classes control
+                the overall appearance, as well as the showing and hiding via
+                CSS transitions. You can modify any of this with custom CSS or
+                overriding our default variables. It's also worth noting that
+                just about any HTML can go within the
+                <code>.accordion-body</code>, though the transition does limit
+                overflow.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="blog" class="bg-body-tertiary py-5">
+      <div class="container">
+        <div
+          class="d-flex flex-column justify-content-between pt-5 align-items-center w-100"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="1000"
+        >
+          <p class="fs-2 fw-semibold heading">Recent Blog Post</p>
+          <div class="underline bg-success"></div>
+        </div>
+        <p
+          class="text-center mt-3 mb-5"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="1000"
+        >
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit
+          vero, sit itaque odit ipsum quidem nam, ea maxime ad quae vitae
+          blanditiis voluptatibus architecto cumque laboriosam aliquid ratione
+          aut fugit.
+        </p>
+        <div
+          class="row row-cols-1 row-cols-md-3 g-4"
+          data-aos="fade-up"
+          data-aos-offset="300"
+          data-aos-duration="1000"
+        >
+          <div class="col">
+            <div class="card">
+              <img src="img/blog/blog-1.jpg" alt="" class="card-img-top" />
+              <div class="card-body px-4 pb-5">
+                <p class="card-subtitle py-2 fs-6">Lorem</p>
+                <p class="card-title fs-5 py-2 fw-bold">
+                  <a href="blog-post.html"
+                    >Lorem ipsum dolor sit amet consectetur.</a
+                  >
+                </p>
+                <div class="author d-flex">
+                  <img
+                    src="img/blog/blog-author-2.jpg"
+                    alt=""
+                    class="author-pic"
+                  />
+                  <div
+                    class="author-info d-flex flex-column ms-3 justify-content-between"
+                  >
+                    <p class="author-name fs-6 fw-semibold mb-1">
+                      Lorem, ipsum.
+                    </p>
+                    <p class="author-date">Lorem, ipsum dolor.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/blog/blog-2.jpg" alt="" class="card-img-top" />
+              <div class="card-body px-4 pb-5">
+                <p class="card-subtitle py-2 fs-6">Lorem</p>
+                <p class="card-title fs-5 py-2 fw-bold">
+                  <a href="blog-post.html"
+                    >Lorem ipsum dolor sit amet consectetur.</a
+                  >
+                </p>
+                <div class="author d-flex">
+                  <img
+                    src="img/blog/blog-author-3.jpg"
+                    alt=""
+                    class="author-pic"
+                  />
+                  <div
+                    class="author-info d-flex flex-column ms-3 justify-content-between"
+                  >
+                    <p class="author-name fs-6 fw-semibold mb-1">
+                      Lorem, ipsum.
+                    </p>
+                    <p class="author-date">Lorem, ipsum dolor.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="img/blog/blog-4.jpg" alt="" class="card-img-top" />
+              <div class="card-body px-4 pb-5">
+                <p class="card-subtitle py-2 fs-6">Lorem</p>
+                <p class="card-title fs-5 py-2 fw-bold">
+                  <a href="blog-post.html"
+                    >Lorem ipsum dolor sit amet consectetur.</a
+                  >
+                </p>
+                <div class="author d-flex">
+                  <img
+                    src="img/blog/blog-author-4.jpg"
+                    alt=""
+                    class="author-pic"
+                  />
+                  <div
+                    class="author-info d-flex flex-column ms-3 justify-content-between"
+                  >
+                    <p class="author-name fs-6 fw-semibold mb-1">
+                      Lorem, ipsum.
+                    </p>
+                    <p class="author-date">Lorem, ipsum dolor.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="container py-5">
+      <div
+        class="d-flex flex-column justify-content-between pt-5 align-items-center w-100"
+        data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-duration="1000"
+      >
+        <p class="fs-2 fw-semibold heading">Contact Us</p>
+        <div class="underline bg-success"></div>
+      </div>
+      <p
+        class="text-center mt-3 mb-5"
+        data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-duration="1000"
+      >
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit vero,
+        sit itaque odit ipsum quidem nam, ea maxime ad quae vitae blanditiis
+        voluptatibus architecto cumque laboriosam aliquid ratione aut fugit.
+      </p>
+      <div
+        class="contact-form d-flex flex-column flex-lg-row"
+        data-aos="fade-up"
+        data-aos-offset="300"
+        data-aos-duration="1000"
+      >
+        <div class="left-box p-4 bg-success rounded-start-3 text-white">
+          <div
+            class="d-flex px-3 my-3 py-2 bg-success-subtle align-items-center"
+          >
+            <div
+              class="backdrop me-4 d-flex justify-content-center align-items-center"
+            >
+              <i class="bi bi-geo-alt fs-5"></i>
+            </div>
+            <div class="loction-details">
+              <p class="fs-5 mb-1 fw-semibold">Location</p>
+              <p class="fs-6 mt-1">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div
+            class="d-flex px-3 my-3 py-2 bg-success-subtle align-items-center"
+          >
+            <div
+              class="backdrop me-4 d-flex justify-content-center align-items-center"
+            >
+              <i class="bi bi-geo-alt fs-5"></i>
+            </div>
+            <div class="loction-details">
+              <p class="fs-5 mb-1 fw-semibold">Location</p>
+              <p class="fs-6 mt-1">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div
+            class="d-flex px-3 my-3 py-2 bg-success-subtle align-items-center"
+          >
+            <div
+              class="backdrop me-4 d-flex justify-content-center align-items-center"
+            >
+              <i class="bi bi-geo-alt fs-5"></i>
+            </div>
+            <div class="loction-details">
+              <p class="fs-5 mb-1 fw-semibold">Location</p>
+              <p class="fs-6 mt-1">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div
+            class="d-flex px-3 my-3 py-2 bg-success-subtle align-items-center"
+          >
+            <div
+              class="backdrop me-4 d-flex justify-content-center align-items-center"
+            >
+              <i class="bi bi-geo-alt fs-5"></i>
+            </div>
+            <div class="loction-details">
+              <p class="fs-5 mb-1 fw-semibold">Location</p>
+              <p class="fs-6 mt-1">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </div>
+        <div class="px-4 right-box flex-grow-1">
+          <form action="" class="d-flex flex-column align-items-center">
+            <div
+              class="w-100 d-flex justify-content-between align-items-center flex-column flex-lg-row"
+            >
+              <input
+                type="text"
+                class="container me-3"
+                required
+                placeholder="Your Email"
+              />
+              <input
+                type="text"
+                class="container ms-3"
+                required
+                placeholder="Your name"
+              />
+            </div>
+            <input
+              type="text"
+              class="container w-100"
+              required
+              placeholder="Your name"
+            />
+            <textarea
+              name="textarea"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Enter Message"
+              class="container w-100"
+            ></textarea>
+            <input
+              type="submit"
+              class="btn bg-success text-white col-auto rounded-5 px-3 py-3 fs-6"
+              value="Send Message"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="footer" class="bg-success text-white py-5">
+      <div class="container">
+        <div class="container row my-3 d-flex flex-sm-column flex-md-row">
+          <div class="left-box container col-md-4 col-12">
+            <p class="fs-2 fw-semibold mb-0">Impact</p>
+            <p class="mb-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+              magni deserunt modi nesciunt rerum qui laborum, obcaecati numquam
+              aut eos quis nihil quod ratione, illum iste, tenetur quasi ipsum
+              quidem?
+            </p>
+            <div class="d-flex button-row align-items-center my-3">
+              <button class="text-white bg-transparent rounded-circle">
+                <i class="bi bi-twitter"></i>
+              </button>
+              <button class="text-white bg-transparent rounded-circle">
+                <i class="bi bi-facebook"></i>
+              </button>
+              <button class="text-white bg-transparent rounded-circle">
+                <i class="bi bi-instagram"></i>
+              </button>
+              <button class="text-white bg-transparent rounded-circle">
+                <i class="bi bi-linkedin"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="right-box container col-md-8 col-12 row row-cols-2 row-cols-md-3 justify-content-center"
+          >
+            <div class="col">
+              <p class="fw-bold mb-1 fs-6">Useful Links</p>
+              <ul class="list-unstyled">
+                <li class="fw-medium py-2"><a href="">Home</a></li>
+                <li class="fw-medium py-2"><a href="">About Us</a></li>
+                <li class="fw-medium py-2"><a href="">Services</a></li>
+                <li class="fw-medium py-2">
+                  <a href="">Terms of service</a>
+                </li>
+                <li class="fw-medium py-2"><a href="">Privacy policy</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <p class="fw-bold mb-1 fs-6">Our Services</p>
+              <ul class="list-unstyled">
+                <li class="fw-medium py-2"><a href="">Web Design</a></li>
+                <li class="fw-medium py-2"><a href="">Web Development</a></li>
+                <li class="fw-medium py-2">
+                  <a href="">Product Management</a>
+                </li>
+                <li class="fw-medium py-2">
+                  <a href="">Marketing</a>
+                </li>
+                <li class="fw-medium py-2"><a href="">Graphic Design</a></li>
+              </ul>
+            </div>
+            <div class="col text-lg-start text-center my-2 my-lg-0 fw-medium">
+              <p class="fw-bold mb-1 fs-6">Contact Us</p>
+              <p class="my-3">
+                <span class="my-2 d-block">A108 Adam Street</span>
+                <span class="my-2 d-block">New York, NY 535022</span>
+                <span class="my-2 d-block">United States</span>
+              </p>
+              <p class="my-4">
+                <span class="my-2 d-block"
+                  ><span class="fw-bold">Phone:</span>+234 444 555 6666</span
+                >
+                <span class="my-2 d-block"
+                  ><span class="fw-bold">Email: </span>info@example.com</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container d-flex justify-content-center align-items-center flex-column"
+        >
+          <p>
+            &copy; Copyright <span class="fw-bold">Impact.</span> All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        items: 3,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+            nav: true,
+          },
+          1000: {
+            items: 3,
+            nav: false,
+          },
+        },
+      });
+    });
+
+    var brandSwiper = new Swiper(".myswiper", {
+      speed: 400,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      slidesPerView: "auto",
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 60,
+        },
+        640: {
+          slidesPerView: 4,
+          spaceBetween: 80,
+        },
+        992: {
+          slidesPerView: 6,
+          spaceBetween: 120,
+        },
+      },
+    });
+    AOS.init({ once: true });
+  </script>
+  <script src="script.js"></script>
+</html>
