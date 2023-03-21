@@ -8,6 +8,21 @@ body {
   width: 100vw;
 }
 
+nav a.nav-link::before {
+  content: "";
+  display: block !important;
+  position: absolute;
+  background-color: #f85a40;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+  height: 2px;
+  bottom: 0px;
+}
+
+nav li.nav-item:hover a.nav-link::before,
+nav a.active::before {
+  width: 70%;
+}
 .bg-success {
   background-color: #008374 !important;
   color: white !important;
@@ -267,30 +282,31 @@ div.tags a:hover {
   background-color: #00796b;
   color: white !important;
 }
-
-@media screen and (min-width: 400px) {
-  div.banner div.icons {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 800px) {
+@media only screen and (max-width: 420px) {
   nav a.nav-link::before {
-    content: "";
-    display: block !important;
-    position: absolute;
-    background-color: #f85a40;
-    width: 0;
-    transition: width 0.3s ease-in-out;
-    height: 2px;
-    bottom: 0px;
+    display: none !important;
   }
-
-  nav li.nav-item:hover a.nav-link::before,
-  nav a.active::before {
-    width: 70%;
+  section#pricing div.active {
+    transform: scale(1) !important;
+    border: 2px solid #00796b;
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  section#main-body {
+    margin-bottom: 20px !important;
+  }
+  section.main-body-footer {
+    position: relative !important;
+  }
+  section.main-body-footer > div > div {
+    width: auto;
+  }
+  div.banner {
+    font-size: 0.8rem;
   }
   div.banner div.icons {
-    display: block;
+    display: none !important;
+    visibility: hidden;
   }
 }
