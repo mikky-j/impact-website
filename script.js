@@ -4,7 +4,10 @@ let sections = document.querySelectorAll("section");
 let scrollToTop = document.getElementById("scroll-to-top");
 let portfolioNavs = document.querySelectorAll("#portfolio .nav-link");
 let porfolioProducts = document.querySelectorAll("#portfolio .col");
-console.log(porfolioProducts);
+
+$("#offcanvasNavbar a").click(function () {
+  $("button.navbar-toggler").click();
+});
 
 const getTranslateXY = (element) => {
   const style = window.getComputedStyle(element);
@@ -94,7 +97,6 @@ window.addEventListener("scroll", (e) => {
     header.classList.remove("fixed-top");
   }
   let currentId = getCurrentSectionId();
-  console.log(currentId);
   if (currentId != "#main-body" && currentId != "#main") {
     scrollToTop.classList.remove("disappear");
     if (!scrollToTop.classList.contains("appear")) {
