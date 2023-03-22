@@ -9,20 +9,10 @@ $("#offcanvasNavbar a").click(function () {
   $("button.navbar-toggler").click();
 });
 
-const getTranslateXY = (element) => {
-  const style = window.getComputedStyle(element);
-  const matrix = new DOMMatrixReadOnly(style.transform);
-  return {
-    translateX: matrix.m41,
-    translateY: matrix.m42,
-  };
-};
-
 portfolioNavs.forEach((nav) => {
   nav.addEventListener("click", (e) => {
     let tag = nav.textContent.toLowerCase();
     // Change the products
-    let counter = 0;
     porfolioProducts.forEach((product) => {
       if (product.getAttribute("aria-tag") != tag && tag != "all") {
         product.classList.remove("active");
@@ -30,7 +20,6 @@ portfolioNavs.forEach((nav) => {
           product.classList.add("inactive");
         }
       } else {
-        // let target = porfolioProducts[counter++];
         product.classList.remove("inactive");
         if (!product.classList.contains("active")) {
           product.classList.add("active");
