@@ -3,12 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=no"> -->
-    <meta
-      name="viewport"
-      content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"
-    />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -163,12 +158,12 @@
         </nav>
       </header>
       <section
-        class="hero-body pb-5 text-white"
+        class="hero-body text-white d-flex justify-content-center align-items-center"
         data-aos="fade-in"
         data-aos-duration="1000"
       >
         <div
-          class="container-xl h-100 container-fluid d-flex flex-column-reverse flex-lg-row justify-content-center align-items-center"
+          class="container h-100 d-flex flex-column-reverse flex-lg-row justify-content-center align-items-center"
         >
           <div
             class="left-hero flex-grow-0 mt-4 mt-lg-0 d-flex flex-column justify-content-center align-items-center align-items-lg-start"
@@ -187,52 +182,59 @@
             </div>
           </div>
           <div
-            class="right-hero flex-grow-1 d-flex justify-content-center align-items-center"
+            class="right-hero flex-grow-1 d-flex justify-content-center align-items-center align-content-between"
           >
             <img src="hero-img.svg" alt="Hero Image" class="img-fluid" />
           </div>
         </div>
       </section>
-      <section
-        class="main-body-footer d-flex justify-content-center w-100 text-white mb-4"
-      >
-        <div
-          class="d-flex flex-column flex-md-row justify-content-between container-xl container-fluid h-100 w-100"
-        >
-          <div
-            class="h-100 rounded-3 mt-4 mt-lg-0 container bg-success-subtle d-flex flex-column justify-content-center align-items-center bg-success p-5 text-center"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <i class="bi bi-easel d-block"></i>
-            <div class="text">Lorem, ipsum.</div>
-          </div>
-          <div
-            class="h-100 rounded-3 mt-4 mt-lg-0 container bg-success-subtle d-flex flex-column justify-content-center align-items-center bg-success p-5 text-center"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-offset="50"
-          >
-            <i class="bi bi-gem"></i>
-            <div class="text">Lorem, ipsum.</div>
-          </div>
-          <div
-            class="h-100 rounded-3 mt-4 mt-lg-0 container bg-success-subtle d-flex flex-column justify-content-center align-items-center bg-success p-5 text-center"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-offset="100"
-          >
-            <i class="bi bi-geo-alt"></i>
-            <div class="text">Lorem, ipsum.</div>
-          </div>
-          <div
-            class="h-100 rounded-3 mt-4 mt-lg-0 container bg-success-subtle d-flex flex-column justify-content-center align-items-center bg-success p-5 text-center"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-offset="150"
-          >
-            <i class="bi bi-command"></i>
-            <div class="text">Lorem, ipsum.</div>
+      <section class="main-body-footer text-white position-relative">
+        <div class="container position-relative">
+          <div class="row w-100 g-3 my-4">
+            <div class="col-xl-3 col-md-6">
+              <div
+                class="rounded-3 p-5 bg-success-subtle text-center"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="0"
+              >
+                <i class="bi bi-easel d-block"></i>
+                <div class="text w-100">Lorem, ipsum.</div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div
+                class="rounded-3 p-5 bg-success-subtle text-center"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
+                <i class="bi bi-gem"></i>
+                <div class="text w-100">Lorem, ipsum.</div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div
+                class="rounded-3 p-5 bg-success-subtle text-center"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="400"
+              >
+                <i class="bi bi-geo-alt"></i>
+                <div class="text w-100">Lorem, ipsum.</div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div
+                class="rounded-3 p-5 bg-success-subtle text-center"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="600"
+              >
+                <i class="bi bi-command"></i>
+                <div class="text w-100">Lorem, ipsum.</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -441,7 +443,7 @@
           aut fugit.
         </p>
         <div
-          class="row row-cols-1 row-cols-md-3 g-4"
+          class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4"
           data-aos="fade-up"
           data-aos-offset="300"
           data-aos-duration="1000"
@@ -781,7 +783,7 @@
           </li>
         </ul>
         <div
-          class="row row-cols-1 row-cols-md-3 g-4 position-relative"
+          class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4 position-relative"
           data-aos="fade-up"
           data-aos-offset="300"
           data-aos-duration="1000"
@@ -1026,7 +1028,7 @@
         voluptatibus architecto cumque laboriosam aliquid ratione aut fugit.
       </p>
       <div
-        class="row row-cols-1 row-cols-md-4 g-4"
+        class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 g-4"
         data-aos="fade-up"
         data-aos-offset="300"
         data-aos-duration="1000"
@@ -1212,7 +1214,7 @@
           aut fugit.
         </p>
         <div
-          class="pricing-list d-flex flex-md-row flex-column justify-content-center"
+          class="pricing-list d-flex flex-lg-row flex-column justify-content-center"
           data-aos="zoom-in-down"
           data-aos-offset="300"
           data-aos-duration="1000"
@@ -1585,7 +1587,7 @@
           aut fugit.
         </p>
         <div
-          class="row row-cols-1 row-cols-md-3 g-4"
+          class="row row-cols-1 row-cols-lg-3 row-cols-md-2 g-4"
           data-aos="fade-up"
           data-aos-offset="300"
           data-aos-duration="1000"
@@ -1701,7 +1703,7 @@
         voluptatibus architecto cumque laboriosam aliquid ratione aut fugit.
       </p>
       <div
-        class="contact-form d-flex flex-column flex-lg-row"
+        class="contact-form d-flex flex-column flex-lg-row rounded-3"
         data-aos="fade-up"
         data-aos-offset="300"
         data-aos-duration="1000"
@@ -1760,10 +1762,13 @@
             </div>
           </div>
         </div>
-        <div class="px-4 right-box flex-grow-1">
-          <form action="" class="d-flex flex-column align-items-center">
+        <div class="p-4 right-box mt-3 mt-lg-0 flex-grow-1 rounded-end-3">
+          <form
+            action=""
+            class="d-flex flex-column rounded-end-3 align-items-center"
+          >
             <div
-              class="w-100 d-flex justify-content-between align-items-center flex-column flex-lg-row"
+              class="w-100 d-flex justify-content-between align-items-center flex-column flex-lg-row rounded-3"
             >
               <input
                 type="text"
@@ -1803,8 +1808,8 @@
     </section>
     <section id="footer" class="bg-success text-white py-5">
       <div class="container">
-        <div class="container row my-3 d-flex flex-column flex-md-row">
-          <div class="left-box container col-md-4 col-12">
+        <div class="container row my-3 d-flex flex-column flex-lg-row">
+          <div class="left-box container col-lg-4 col-12">
             <p class="fs-2 fw-semibold mb-0">Impact</p>
             <p class="mb-0">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
@@ -1828,7 +1833,7 @@
             </div>
           </div>
           <div
-            class="right-box container col-md-8 col-12 row row-cols-2 row-cols-md-3 justify-content-center"
+            class="right-box container col-lg-8 col-12 row row-cols-2 row-cols-lg-3 justify-content-md-start justify-content-center"
           >
             <div class="col">
               <p class="fw-bold mb-1 fs-6">Useful Links</p>
@@ -1856,7 +1861,7 @@
                 <li class="fw-medium py-2"><a href="">Graphic Design</a></li>
               </ul>
             </div>
-            <div class="col text-lg-start text-center my-2 my-lg-0 fw-medium">
+            <div class="col text-md-start text-center my-2 my-lg-0 fw-medium">
               <p class="fw-bold mb-1 fs-6">Contact Us</p>
               <p class="my-3">
                 <span class="my-2 d-block">A108 Adam Street</span>
