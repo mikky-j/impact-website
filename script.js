@@ -40,7 +40,13 @@ portfolioNavs.forEach((nav) => {
   });
 });
 
-const getId = (anchorElement) => anchorElement.href.match(/#.*/)[0];
+const getId = (anchorElement) => {
+  let match = anchorElement.href.match(/#.*/);
+  if (match) {
+    return match[0];
+  }
+  return "";
+};
 
 const updateActive = (currentSectionId) => {
   links.forEach((link) => {
