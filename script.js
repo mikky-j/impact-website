@@ -6,7 +6,9 @@ let portfolioNavs = document.querySelectorAll("#portfolio .nav-link");
 let porfolioProducts = document.querySelectorAll("#portfolio .col");
 
 $("#offcanvasNavbar a").click(function () {
-  $("button.navbar-toggler").click();
+  if ($("button.navbar-toggler").css("display") == "block") {
+    $("button.navbar-toggler").click();
+  }
 });
 
 portfolioNavs.forEach((nav) => {
